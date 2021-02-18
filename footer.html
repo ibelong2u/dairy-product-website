@@ -1,0 +1,39 @@
+    
+      <div id="footer">Honey Creek Creamery &copy; 2013</div>
+
+    </div>  
+
+    <script src="template/script.js"></script>
+    <script src="template/jquery.js"></script>
+    <script src="template/jquery.nivo.slider.js"></script>
+        
+    <script>
+    
+          (function($) {
+                $(window).load(function(){
+                    $('.nivoSlider').nivoSlider({
+                    effect:'sliceDown',
+                    slices:15,
+                    animSpeed:25,
+                    pauseTime:5000,
+                    startSlide:0,
+                    directionNav:1,
+                    directionNavHide:1,
+                    controlNav:1,
+                    controlNavThumbs:0,
+                    keyboardNav:1,
+                    pauseOnHover:1,
+                    manualAdvance:0,
+                    captionOpacity:0.8
+                    });
+                            
+              $('a[href="' + location.pathname.split('/')[1] + '#menu"]').addClass('active');
+              
+                });
+            })(jQuery);            
+    </script>
+
+  </body>
+  
+</html>
+

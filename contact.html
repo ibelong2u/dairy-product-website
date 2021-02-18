@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Honey Creek Creamery - Contact Us</title>
+    <meta name="description" content="Connect with us; come for a visit or send us a message!" />
+    <meta name="keywords" content="Honey Creek Creamery, Contact, Email, Phone, Visit, Address" />
+    
+    <script>
+      if (location.href.split('=')[1] == 1)
+        alert('Your message has been sent.');
+    </script>
+  
+    <!--#include virtual ="header.html" -->
+
+    <div id="main">
+      
+      <div><h1 id="MainHeading1" class="editable-text">Send us a message</h1></div>
+      
+      <div>
+
+        <form name="contact" method="post" action="send.php" style="float:left; padding: 10px 100px 20px 50px;">
+          <div>Name:&nbsp; <input type="text" name="name" style="box-shadow:0 0 1px #000;" /></div>
+          <div>Phone: <input type="text" name="phone" style="box-shadow:0 0 1px #000;" /></div>
+          <div>Email:&nbsp;&nbsp; <input type="text" name="email" style="box-shadow:0 0 1px #000;" /></div>
+          <div style="padding-bottom:0">Your Message:</div>
+          <div><textarea cols="21" rows="6" name="message" style="box-shadow:0 0 1px #000;"> </textarea></div>
+          <div><input style="cursor: pointer; box-shadow: 0 2px 10px black; border-radius: 10px; font-weight: bold; font-size: 20px; font-variant: small-caps; padding: 5px 10px; display: block; margin: auto;" name="button" type="button" onclick="this.form.submit();" value="click here to send"></div>
+        </form>
+
+        <div id="MainContent1" class="editable"><p><strong><span style="font-size: large;">Sharon Oamek</span></strong><br/>Artisan Cheesemaker</p>
+
+
+<p><strong>Phone:</strong> (402) 690-9252</p>
+
+          <p><strong>Email:</strong><br/><a href="mailto:info@honeycreekcreamery.com">Info@HoneyCreekCreamery.com</a></p>
+
+<p><strong>Honey Creek Creamery, Inc.</strong><br />
+25593 Old Lincoln Hwy<br />
+Honey Creek, IA 51542</p>
+
+<p>We offer pre-arranged tours of the dairy for a nominal fee. Please contact
+us to schedule.</p>
+
+<p><a href="http://honeycreekcreamery.com/locator.html#menu">Places where our products are available</a> &raquo;</p></div>
+ 
+    </div>
+      
+      
+    </div>
+
+    <!--#include virtual ="footer.html" -->
